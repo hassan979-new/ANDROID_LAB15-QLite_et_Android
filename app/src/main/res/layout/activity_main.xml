@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/popup_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nom: "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/popup_img"/>
+
+    <EditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/popup_img"
+        android:layout_below="@id/textView"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prenom :"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_toEndOf="@id/popup_img"
+        android:layout_below="@id/nom"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/prenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/popup_img"
+        android:layout_below="@id/textView2"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Valider"
+        android:layout_toEndOf="@id/popup_img"
+        android:layout_below="@id/prenom"
+        android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Supprimer"
+        android:layout_toEndOf="@id/popup_img"
+        android:layout_below="@id/bn"
+        android:layout_marginStart="16dp"/>
+
+</RelativeLayout>
+
+
